@@ -1,0 +1,1095 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="savebody" align="left">
+To save the document, please press "File" and then select "Save As".<br>要儲存此文件，請按“檔案”，然後選擇“另存新檔”。<br>
+ 
+
+<script>/* 
+
+var imgPath = 'https://etax24.ird.gov.hk/ird/eTAX/static/common/images/';
+
+*/</script>
+      
+
+<script>/*
+function commafy(num)
+{
+  num= num+"";
+  if(num.indexOf(".") != -1){
+  	num = num.substring(0,num.indexOf("."));
+  }
+   if (num == "undefined"  )
+   {
+   	document.write("");
+   } else {
+	   var  re=/(-?\d+)(\d{3})/
+	   while(re.test(num))
+	   {
+	     num = num.replace(re,"$1,$2")
+	   }
+
+
+	   if (num.substring(0,1) == "-")
+	   {
+	   		num = num.replace("-","")
+	   		num = "(" + num + ")"
+	   	}
+
+	   document.write(num);
+
+   }
+}
+function final_year(year)
+{
+ year = year + "";
+ if (year ==  "undefined"  )
+   	document.write(" / ");
+ else
+    document.write(year-1+"/"+year.substr(year.length - 2));
+}
+function prov_year(year)
+{
+ year = year + "";
+ if (year ==  "undefined"  )
+   	document.write(" / ");
+ else
+   {
+    document.write(year+"/");
+    var y = parseInt(year)+1;
+    y = y + "";
+    document.write(y.substr(year.length - 2));
+  }
+}
+
+function FormateDate(v_date){
+  v_date = new String(v_date);
+
+  if (v_date == "undefined"  )
+   {
+   	document.write("");
+   }
+  else
+  {
+   var str=v_date.substring(6,8)+"/"+v_date.substring(4,6)+ "/"+v_date.substring(0,4);
+   document.write(str);
+  }
+}
+function format_rate(rate)
+{
+   rate = rate + "";
+   if (rate =="undefined" )
+      document.write("%");
+   else{
+    rate = parseInt(rate*100) ;
+    document.write(rate+"%");
+    }
+ }
+
+function writeImageLink (imgPath, imgName, size_w, size_h) {
+if (size_w == 0 && size_h == 0)
+document.write ("<img src=" + imgPath + imgName + ">");
+else
+document.write ("<img src=" + imgPath + imgName + " width=\"" + size_w + "\" height=\"" + size_h + "\">");
+}
+
+function packAmt(amt){
+
+	var spaceChar = "&nbsp;";
+	var strAmt = "" + amt;
+
+	if (strAmt == "undefined"  ){
+   		document.write("");
+   	} else {
+		var  re=/(-?\d+)(\d{3})/
+		while(re.test(strAmt)) {
+			strAmt = strAmt.replace(re,"$1,$2")
+		}
+
+		if (strAmt.substring(0,1) == "-") {
+	   		strAmt = strAmt.replace("-","")
+	   		strAmt = "(" + strAmt + ")"
+		}
+
+		for (var i = strAmt.length; i <= 18; i++) {
+			strAmt = spaceChar + strAmt;
+		}
+
+		document.write(strAmt);
+   }
+}
+
+
+*/</script>
+
+<table id="cont_table" width="95%" cellspacing="0" cellpadding="3" border="0">
+	<tbody><tr>
+		<td class="contenttextsmall" align="right">Ref. No. M2732381</td>
+	</tr>
+</tbody></table>
+
+<table id="cont_table" width="99%" cellspacing="0" cellpadding="3" border="0">
+	<tbody><tr>
+		<td width="62">
+			<script>/*
+	            writeImageLink("https://etax24.ird.gov.hk/ird/eTAX/static/common/images/", "r_logo.gif", 62, 57);
+            */</script><img src="ViewTaxCompPortletWindow_files/r_logo.gif" width="62" height="57">
+		</td>
+		<td class="contenttextboldsmall" align="center">
+			<p>Estimated Salaries
+				Tax Computation <span id="titleTail"></span><br>
+				Year of Assessment
+
+				<script>/*
+				final_year(2021);
+				*/</script>2020/21
+
+				(Final) and
+				<script>/*
+				prov_year(2021);
+				*/</script>2021/22
+				(Provisional)
+			</p>
+			<p>FOR REFERENCE ONLY</p>
+		</td>
+		<td class="contenttextboldsmall" width="62" align="center"> <p>&nbsp;</p></td>
+	</tr>
+</tbody></table>
+
+<table id="cont_table" class="contenttextsmall" width="99%" cellspacing="0" cellpadding="1" border="0">
+	<tbody><tr class="colourlightgray">
+		<td>
+			<table class="contenttextsmall" width="100%" cellspacing="1" cellpadding="3" border="0">
+				<tbody><tr>
+					<td style="width:35%"></td>
+					<td style="width:15%"></td>
+					<td style="width:4%"></td>
+					<td style="width:15%"></td>
+					<td style="width:1%"></td>
+					<td style="width:15%"></td>
+					<td style="width:15%"></td>
+				</tr>
+
+		 		<tr class="contenttextboldsmall colourlightgray">
+					<td>Year of Assessment </td>
+					<td colspan="3" align="right">
+						<span class="contenttextboldsmallUL">
+							<script>/*
+								final_year(2021);
+							*/</script>2020/21
+							(Final)
+						</span>
+					</td>
+					<td>&nbsp;</td>
+					<td colspan="2" align="right">
+						<span class="contenttextboldsmallUL">
+							<script>/*
+								prov_year(2021);
+							*/</script>2021/22
+							(Provisional)
+						</span>
+					</td>
+				</tr>
+				<tr class="colourlightgray" align="right">
+					<td>&nbsp;</td>
+					<td align="right">$</td>
+					<td colspan="2" align="right">$</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">$</td>
+					<td align="right">$</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td>Self income </td>
+					<td align="right">
+						<script>/*
+							commafy(2010000);
+						*/</script>2,010,000
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+						<script>/*
+							commafy(2010000);
+						*/</script>2,010,000
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td>Add: Value of Residence Provided </td>
+					<td style="border-bottom:1px solid black" align="right">
+							<script>/*
+							packAmt(0);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td style="border-bottom:1px solid black" align="right">
+							<script>/*
+							packAmt(0);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td>&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td colspan="2" class="contenttextboldsmall" align="right">
+						<script>/*
+							commafy(2010000);
+						*/</script>2,010,000
+					</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td class="contenttextboldsmall" align="right">
+						<script>/*
+						commafy(2010000);
+						*/</script>2,010,000
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="7" style="height:10px"></td>
+				</tr>
+
+				<tr class="colourlightgray">
+					<td class="contenttextboldsmall">Less: Deductions </td>
+					<td colspan="3">&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td>Outgoings and Expenses </td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td>Self-education Expenses </td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td>Charitable Donations </td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+						<script>/*
+							if (0<100)
+								document.write("0");
+							else
+								commafy(0);
+						*/</script>0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td class="EngArial2">Retirement Scheme Contributions</td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td class="EngArial2">Home Loan Interest</td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td class="EngArial2"> Elderly Residential Care Expenses </td>
+					<td align="right">
+							<script>/*
+								commafy(0);
+							*/</script>0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+							<script>/*
+								commafy(0);
+							*/</script>0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<!--20191209 Edit Start-->
+				<tr class="colourlightgray">
+					<td class="EngArial2">Tax Deductible MPF Voluntary Contributions</td>
+					<td align="right">
+							<script>/*
+								commafy(0);
+							*/</script>0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+							<script>/*
+								commafy(0);
+							*/</script>0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<!---->
+				<tr class="colourlightgray">
+					<td class="EngArial2">Qualifying Annuity Premiums</td>
+					<td align="right">
+							<script>/*
+								commafy(0);
+							*/</script>0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+							<script>/*
+								commafy(0);
+							*/</script>0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<!--20191209 Edit End-->
+				<tr class="colourlightgray">
+					<td class="EngArial2">Qualifying Health Insurance Premiums</td>
+					<td align="right">
+													0
+											</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+													0
+											</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td>&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td style="border-bottom:1px solid black" align="right">
+							<script>/*
+								packAmt(0);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0
+					</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td style="border-bottom:1px solid black" align="right">
+							<script>/*
+								packAmt(0);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0
+					</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td>Net Total Income</td>
+					<td align="right">&nbsp;</td>
+					<td colspan="2" class="contenttextboldsmall" align="right">
+						<script>/*
+							if (2010000 < 0)
+								document.write("0")
+							else
+								commafy(2010000);
+						*/</script>2,010,000
+					</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td class="contenttextboldsmall" align="right">
+						<script>/*
+							if (2010000 < 0)
+								document.write("0")
+							else
+								commafy(2010000);
+						*/</script>2,010,000
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="7" style="height:10px"></td>
+				</tr>
+
+				<tr class="contenttextboldsmall colourlightgray">
+					<td colspan="7" class="contenttextboldsmall">Less: Allowances </td>
+				</tr>
+				<tr class="colourlightgray">
+					<td>Basic / Married Person's </td>
+					<td align="right">
+						<script>/*
+							commafy(132000);
+						*/</script>132,000
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+						<script>/*
+							commafy(132000);
+						*/</script>132,000
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td>Single Parent</td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+
+				<tr class="colourlightgray">
+					<td>Personal Disability</td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+
+				<tr class="colourlightgray">
+					<td>Child </td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td class="EngArial2">Dependent Brother / Sister</td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+						<script>/*
+							commafy(0);
+						*/</script>0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td colspan="1" class="EngArial2">Dependent Parent / Grandparent</td>
+					<td align="right">&nbsp;</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td class="EngArial2">&nbsp;&nbsp;&nbsp;&nbsp;Aged 55 to 59</td>
+					<td align="right">
+						<script>/*
+							commafy(parseInt(0) + parseInt(0));
+						*/</script>0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+						<script>/*
+							commafy(parseInt(0) + parseInt(0));
+						*/</script>0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td class="EngArial2">&nbsp;&nbsp;&nbsp;&nbsp;Aged 60 or over, or disabled</td>
+					<td align="right">
+						<script>/*
+							commafy(parseInt(0) + parseInt(0));
+						*/</script>0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">
+						<script>/*
+							commafy(parseInt(0) + parseInt(0));
+						*/</script>0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td>Disabled Dependant</td>
+					<td style="border-bottom:1px solid black" align="right">
+							<script>/*
+								packAmt(0);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0
+					</td>
+					<td colspan="2" align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td style="border-bottom:1px solid black" align="right">
+							<script>/*
+								packAmt(0);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0
+					</td>
+					<td align="right">&nbsp;</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td>&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td style="border-bottom:1px solid black" align="right">
+						<span class="contenttextboldsmall">
+							<script>/*
+								packAmt(132000);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;132,000
+						</span>
+					</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td style="border-bottom:1px solid black" align="right">
+						<span class="contenttextboldsmall">
+							<script>/*
+								packAmt(132000);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;132,000
+						</span>
+					</td>
+				</tr>
+				<tr class="colourlightgray">
+					<td>Net Chargeable Income</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td style="border-bottom:3px double black" align="right">
+						<span class="contenttextboldsmall">
+							<script>/*
+								if  (1878000 < 0)
+									packAmt(0);
+								else
+									packAmt(1878000);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,878,000
+						</span>
+					</td>
+					<td align="right">&nbsp;</td>
+					<td align="right">&nbsp;</td>
+					<td style="border-bottom:3px double black" align="right">
+						<span class="contenttextboldsmall">
+							<script>/*
+								if  (1878000 < 0)
+									packAmt("0");
+								else
+									packAmt(1878000);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,878,000
+						</span>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="7" style="height:10px"></td>
+				</tr>
+
+				<tr class="contenttextboldsmall">
+					<td colspan="2">Tax at Progressive Rates <span class="contenttextredsmall">(before Tax Reduction)</span></td>
+					<td>&nbsp;</td>
+					<td colspan="4">Tax at Progressive Rates </td>
+				</tr>
+				<tr>
+					<td>First
+						<script>/*
+							document.write("$");
+							commafy(50000);
+						*/</script>$50,000
+						@
+						<script>/*
+							format_rate(0.02);
+						*/</script>2%
+					</td>
+					<td class="contenttextboldsmall" align="right">
+						<script>/*
+							commafy(1000);
+						*/</script>1,000
+					</td>
+					<td>&nbsp;</td>
+					<td colspan="3">First
+						<script>/*
+							document.write("$");
+							commafy(50000);
+						*/</script>$50,000
+						@
+						<script>/*
+							format_rate(0.02);
+						*/</script>2%
+					</td>
+					<td class="contenttextboldsmall" align="right">
+						<script>/*
+							commafy(1000);
+						*/</script>1,000
+					</td>
+				</tr>
+				<tr>
+					<td>
+																					Next
+														<script>/*
+								document.write("$");
+								commafy(50000);
+							*/</script>$50,000
+							@
+							<script>/*
+								format_rate(0.06);
+							*/</script>6%
+											</td>
+					<td class="contenttextboldsmall" align="right">
+						<script>/*
+							commafy(3000);
+						*/</script>3,000
+					</td>
+					<td>&nbsp;</td>
+					<td colspan="3">
+																					Next
+														<script>/*
+								document.write("$");
+								commafy(50000);
+							*/</script>$50,000
+							@
+							<script>/*
+								format_rate(0.06);
+							*/</script>6%
+											</td>
+					<td class="contenttextboldsmall" align="right">
+						<script>/*
+							commafy(3000);
+						*/</script>3,000
+					</td>
+				</tr>
+				<tr>
+					<td>
+																					Next
+														<script>/*
+								document.write("$");
+								commafy(50000);
+							*/</script>$50,000
+							@
+							<script>/*
+								format_rate(0.1);
+							*/</script>10%
+											</td>
+					<td class="contenttextboldsmall" align="right">
+						<script>/*
+							commafy(5000);
+						*/</script>5,000
+					</td>
+					<td>&nbsp;</td>
+					<td colspan="3">
+																					Next
+														<script>/*
+								document.write("$");
+								commafy(50000);
+							*/</script>$50,000
+							@
+							<script>/*
+								format_rate(0.1);
+							*/</script>10%
+											</td>
+					<td class="contenttextboldsmall" align="right">
+						<script>/*
+							commafy(5000);
+						*/</script>5,000
+					</td>
+				</tr>
+        <tr>
+					<td>
+																							Next
+															<script>/*
+								document.write("$");
+								commafy(50000);
+							*/</script>$50,000
+							@
+							<script>/*
+								format_rate(0.14);
+							*/</script>14%
+											</td>
+					<td class="contenttextboldsmall" align="right">
+						<script>/*
+							commafy(7000);
+						*/</script>7,000
+					</td>
+					<td>&nbsp;</td>
+					<td colspan="3">
+																					Next
+														<script>/*
+								document.write("$");
+								commafy(50000);
+							*/</script>$50,000
+							@
+							<script>/*
+								format_rate(0.14);
+							*/</script>14%
+											</td>
+					<td class="contenttextboldsmall" align="right">
+						<script>/*
+							commafy(7000);
+						*/</script>7,000
+					</td>
+				</tr>
+				<tr>
+					<td>
+													Remainder
+							<script>/*
+								document.write("$");
+								commafy(1678000);
+							*/</script>$1,678,000
+							@
+							<script>/*
+								format_rate(0.17);
+							*/</script>17%
+											</td>
+					<td class="contenttextboldsmall" style="border-bottom:1px solid black" align="right">
+						<script>/*
+							packAmt(285260);
+						*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;285,260
+					</td>
+					<td>&nbsp;</td>
+					<td colspan="3">
+													Remainder
+							<script>/*
+								document.write("$");
+								commafy(1678000);
+							*/</script>$1,678,000
+							@
+							<script>/*
+								format_rate(0.17);
+							*/</script>17%
+											</td>
+					<td class="contenttextboldsmall" style="border-bottom:1px solid black" align="right">
+						<script>/*
+							packAmt(285260);
+						*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;285,260
+					</td>
+				</tr>
+				<tr>
+					<td class="EngArial2">Tax thereon</td>
+					<td style="border-bottom:3px double black" align="right">
+						<span class="contenttextboldsmall">
+							<script>/*
+								packAmt(301260);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;301,260
+						</span>
+					</td>
+					<td>&nbsp;</td>
+					<td colspan="3">Tax thereon</td>
+					<td style="border-bottom:3px double black" align="right">
+						<span class="contenttextboldsmall">
+							<script>/*
+								packAmt(301260);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;301,260
+						</span>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="7" style="height:10px"></td>
+				</tr>
+
+																</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+
+<table style="page-break-after:always" width="650" cellspacing="0" cellpadding="0" border="0"></table>
+
+<table id="cont_table" class="contenttextsmall" width="99%" cellspacing="0" cellpadding="1" border="0">
+	<tbody><tr>
+		<td style="height:30px"></td>
+	</tr>
+	<tr>
+		<td>
+			<table class="contenttextsmall" id="disclaimerTable" width="100%">
+				<tbody><tr><td>Ref. No. M2732381</td></tr>
+			</tbody></table>
+		</td>
+	</tr>
+	<tr class="colourlightgray">
+		<td>
+			<table class="contenttextsmall" width="100%">
+				<tbody><tr class="contenttextboldsmall">
+					<td>Estimated Salaries Tax Payable </td>
+					<td width="15%" align="right">$</td>
+				</tr>
+				<tr>
+					<td>Final Tax for the Year of Assessment
+						<script>/*
+						final_year(2021);
+						*/</script>2020/21
+						<span class="contenttextredsmall">(before Tax Reduction)</span>
+					</td>
+					<td align="right">
+													<script>/*
+								if(301260 < 301500)
+									commafy(301260);
+								else
+									commafy(301500);
+							*/</script>301,260
+											</td>
+				</tr>
+				<tr>
+					<td>
+													Less:Tax Reduction, capped at
+											</td>
+					<td style="border-bottom:1px solid black" align="right">
+							<script>/*
+								packAmt(10000);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10,000
+					</td>
+				</tr>
+				<tr>
+					<td>Final Tax for the Year of Assessment
+						<script>/*
+							final_year(2021);
+						*/</script>2020/21
+						<span class="contenttextredsmall">
+							(after Tax Reduction)
+						</span>
+					</td>
+					<td align="right">
+						<script>/*
+							commafy(291260);
+						*/</script>291,260
+					</td>
+				</tr>
+				<tr>
+					<td>Less:
+						<script>/*
+							final_year(2021);
+						*/</script>2020/21
+						Net Provisional Tax charged as at
+						<script>/*
+							FormateDate(20210514);
+						*/</script>14/05/2021
+					</td>
+					<td style="border-bottom:1px solid black" align="right">
+							<script>/*
+							packAmt(0.0);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0
+					</td>
+				</tr>
+				<tr>
+					<td>Balance of Final Tax Payable</td>
+					<td align="right">
+						<script>/*
+							commafy(291260);
+						*/</script>291,260
+					</td>
+				</tr>
+				<tr>
+					<td>Add: Provisional Tax for the Year of Assessment
+						<script>/*
+							prov_year(2021);
+						*/</script>2021/22
+					</td>
+					<td style="border-bottom:1px solid black" align="right">
+															<script>/*
+									if(301260 < 301500)
+										packAmt(301260);
+									else
+										packAmt(301500);
+								*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;301,260
+												</td>
+				</tr>
+				<tr>
+					<td>Amount of Total Tax Payable (to be Discharged / Repayable)</td>
+					<td style="border-bottom:3px double black" height="22" align="right">
+						<span class="contenttextboldsmall">
+							<script>/*
+								packAmt(592520);
+							*/</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;592,520
+						</span>
+					</td>
+				</tr>
+			</tbody></table>
+							<br>
+				<table class="contenttextsmall" width="100%">
+					<tbody><tr>
+						<td width="75%">
+							First Instalment (Normal due date falls in January
+							<script>/*
+								document.write( parseInt(2021)  +1);
+							*/</script>2022
+							)
+						</td>
+						<td width="25%" align="right">
+							<script>/*
+								commafy(517205);
+							*/</script>517,205
+						</td>
+					</tr>
+				</tbody></table>
+									<table class="contenttextsmall" width="100%">
+						<tbody><tr>
+							<td>Second Instalment (Normal due date falls in April
+								<script>/*
+									document.write( parseInt(2021)  +1);
+								*/</script>2022
+								)
+							</td>
+							<td width="25%" align="right">
+								<script>/*
+									commafy(75315);
+								*/</script>75,315
+							</td>
+						</tr>
+					</tbody></table>
+									</td>
+	</tr>
+	<tr class="contenttextboldsmall">
+		<td>
+			<table class="contenttextsmall" width="100%">
+				<tbody><tr>
+					<td class="contenttextboldsmall">Date:
+						<script>/*
+							FormateDate(20210514052457);
+						*/</script>14/05/2021
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+
+<table>
+	<tbody><tr>
+		<td class="whiteline10" colspan="2"></td>
+	</tr>
+</tbody></table>
+
+<table id="cont_table" class="contenttextsmall" width="99%" cellspacing="0" cellpadding="1" border="0">
+	<tbody><tr>
+		<td>
+			<table class="contenttextsmall" id="disclaimerTable" width="100%">
+				<tbody><tr>
+					<td class="contenttextboldsmallUL">DISCLAIMER</td>
+				</tr>
+				<tr>
+					<td id="disclaimerText">The amount of the estimated Salaries Tax payable is computed
+					according to the information that you have
+					entered and the assumptions as stated below, if any. It is
+					for your reference only. IRD accepts no liability for
+					any loss arising from or relating to the use of the information.
+					Upon examination of your tax return, the
+					Assessor will make adjustments, if appropriate, in your Salaries
+					Tax assessment.
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+
+<table>
+	<tbody><tr>
+		<td class="whiteline10" colspan="2"></td>
+	</tr>
+</tbody></table>
+
+	<table id="cont_table" class="contenttextsmall" width="99%" cellspacing="0" cellpadding="5" border="0">
+		<tbody><tr>
+			<td class="whiteline10"></td>
+		</tr>
+		<tr>
+			<td class="notesmall">
+				<table class="contenttextsmall" width="100%">
+					<tbody><tr>
+						<td class="contenttextboldsmallUL" width="30">NOTES</td>
+					</tr>
+																<tr>
+							<td valign="top" align="right">
+								1.&nbsp;
+							</td>
+							<td> Information, if any, provided in the text box of Supplementary Information on Tax Return has not been taken 
+into account when computing the estimated amount of tax payable.</td>
+						</tr>
+																<tr>
+							<td valign="top" align="right">
+								2.&nbsp;
+							</td>
+							<td> The tax reduction proposed in 2021-22 Budget have been taken
+ into account in the estimated Salaries Tax computation. The relevant 
+legislation was passed on 28 April 2021 and the Assessor will effect the
+ tax reduction in calculating your tax liability.</td>
+						</tr>
+														</tbody></table>
+			</td>
+		</tr>
+		<tr>
+			<td class="whiteline10"></td>
+		</tr>
+	</tbody></table>
+
+<table>
+	<tbody><tr>
+		<td class="whiteline10" colspan="2"></td>
+	</tr>
+</tbody></table>
+
+
+ 				<link href="ViewTaxCompPortletWindow_files/import.css" rel="stylesheet" type="text/css">
+<link href="ViewTaxCompPortletWindow_files/pagestyle.css" rel="stylesheet" type="text/css">
+<link href="ViewTaxCompPortletWindow_files/typographyEN.css" rel="stylesheet" type="text/css">
+</div>
+	
+</body></html>
